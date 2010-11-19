@@ -113,7 +113,7 @@ public class MedianKMerTest extends TestCase {
 			DNASequence[] seqs = DNASequence.readFile(alpha,
 					"data/malT_5.fasta");
 			MedianKMer m = new MedianKMer(seqs);
-			MedianKMer.Distance d = m.findMedianKMer(9);
+			MedianKMer.Distance d = m.findMedianKMer(12);
 			assertEquals(14, d.actual);
 		} catch (IOException e) {
 			fail("Sequence file not found: " + e.getMessage());

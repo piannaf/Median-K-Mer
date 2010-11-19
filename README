@@ -1,0 +1,26 @@
+Justin Mancinelli
+
+Complete assignment 2 for COMP3506 at the University of Queensland
+
+Description:
+	Incrementally optimize an algorithm for finding the median k-mer of a DNA
+	sequence.
+	
+	Pseudo-code was given for a naive implementation so I first implemented
+	that. Then, I added the branch-and-bound mechanism which significantly
+	sped things up. Then, I implemented the trie to store k-mers which allowed
+	me to optimize the algorithm to search promising k-mers first which sped
+	things up slightly more.
+	
+	MedianKMer.java has the final two implementations which I benchmarked for
+	the final report.
+	
+Files:
+	benchmark.* -- The way I benchmarked the implementations. Results are put
+		into a CSV file for later analysis.
+	motif.* -- Classes required for the algorithm. I don't think I changed 
+		anything other than MedianKMer.java and TrieKMer.java.
+	10COMP3506Assignment2.pdf -- The assignment specification.
+	*.PNG -- Pivot charts out of Excel
+	*.csv -- Results of benchmarking (may not be named correctly)
+	report.* -- The final report.
